@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function search(arr) {
+        regexp = /^(086|096|097|098|032|033|034|035|036|037|038|039)\d{7}/;
+        for (let i = 0; i < arr.length; i++) {
+            if (regexp.test(arr[i])) {
+                document.write(arr[i] + " la so dien thoai viettel" + "<br>");
+            } else {
+                document.write(arr[i] + " ko phai so dien thoai viettel" + "<br>");
+            }
+        }
+    }
+
+    var phone = ["0869555444", "0965444222", "0978787855", "08623456", "0123455888"];
+    search(phone);
+</script>
+</body>
+</html>
